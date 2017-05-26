@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<job>
+  <from>
+    <client id="1"/>
+    <project id="2"/>
+  </from>
+  <dataset>
+    <item>1 item of data</item>
+    <item>2 item of data</item>
+    <item>3 item of data</item>
+    <item>4 item of data</item>
+    <item>5 item of data</item>
+    <item>6 item of data</item>
+    <item>7 item of data</item>
+    <item>8 item of data</item>
+    <item>9 item of data</item>
+    <item>10 item of data</item>
+    <item>11 item of data</item>
+  </dataset>
+</job>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="job">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="from"/>
+                <xs:element ref="dataset"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="from">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="client"/>
+                <xs:element ref="project"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="client">
+        <xs:complexType>
+            <xs:attribute name="id" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="project">
+        <xs:complexType>
+            <xs:attribute name="id" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="dataset">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="item"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="item" type="xs:string"/>
+</xs:schema>
